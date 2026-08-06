@@ -1,0 +1,7 @@
+option_name,type,default,applies_to,description,example
+format,string,bytes,all,"Stream format: 'bytes' for chunked text/binary or 'events' for structured objects",events
+bundleSizeBytes,number,2048,bytes,Maximum size of a single buffer write batch. Reduces message volume.,4096
+maxLatencyMs,number,50,all,Maximum time to buffer before flushing. Balances latency vs efficiency.,100
+direction,string,outbound,all,"Data flow direction: 'outbound' 'inbound' or 'bidirectional'",bidirectional
+declaredStream,string,_default,all,"Key from agent card's streams block. Defaults to '_default' for request tasks.",stream
+subscribeGraceMs,number,1000,pipe,Grace period to wait after stream_started before returning giving caller time to subscribe.,2000

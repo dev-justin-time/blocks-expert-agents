@@ -1,0 +1,11 @@
+benchmark_id,name,metric,langgraph_score,crewai_score,openai_score,google_score,notes,year
+1,Princeton HAL GAIA,Accuracy (%),64.9,Varies,57.6 (Open Deep Research),Varies,Same Claude Opus 4 model scores 64.9% vs 57.6% across scaffolds — 7-point gap from orchestration alone,2026
+2,SWE-bench Verified,Accuracy (%),N/A,N/A,87.6 (Claude Opus 4.7),N/A,Claude Opus 4.7 performance on software engineering tasks,2026
+3,Token Efficiency (simple tasks),Relative tokens,1.0x baseline,~3.0x higher,Varies,Varies,CrewAI carries up to 3x token overhead of LangGraph on single-tool-call workflows,2026
+4,Latency (5 tasks avg),Speed,Fastest,Moderate,Moderate,Moderate,LangGraph fastest across 5-task benchmark; AutoGen matched on latency with different token profile,2026
+5,Lab vs Production Gap,Performance drop,~37%,~37%,~37%,~37%,CLEAR framework: 37% average gap between lab benchmark scores and production deployment performance,2025
+6,Cost Variation (similar accuracy),Cost multiplier,1x-50x,1x-50x,1x-50x,1x-50x,Up to 50x cost variation across agents achieving similar accuracy levels,2025
+7,LLM Cost Share,Percentage of OpEx,40-60%,40-60%,40-60%,40-60%,LLM API calls run 40-60% of total agent operating cost in most production deployments,2026
+8,Stateful Pattern Savings,Cost reduction,40-50%,N/A,N/A,N/A,LangGraph LLM call savings with stateful patterns on repeat workflows,2026
+9,Prompt Caching Savings,Cost reduction,80-90%,80-90%,80-90%,80-90%,Anthropic and Google prompt caching cost reduction on stable-context workloads,2026
+10,Market Size,USD billions,7.84B (2025) → 52.62B (2030),Same,Same,Same,46.3% CAGR; global AI agent market forecast,2025-2030

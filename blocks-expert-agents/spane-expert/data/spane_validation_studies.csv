@@ -1,0 +1,6 @@
+study_id,authors,year,sample_size,country,language,key_findings,pmid_or_doi
+1,Diener et al.,2009,689,USA,English,Initial validation; strong psychometric properties; 12 items measuring frequency of affect over past 4 weeks,10.1037/a0015956
+2,Rahm et al.,2017,1057,Germany,German,Validated German translation; confirmed two-factor structure; good internal consistency (α=.85/.81),10.1371/journal.pone.0171288
+3,Li et al.,2013,4250,China,Chinese,Validated Chinese version; measurement invariance across gender; strong reliability,10.1080/00223891.2013.770487
+4,Silva & Caetano,2021,892,Portugal,Portuguese,Validated Portuguese version; confirmed factor structure; suitable for cross-cultural research,10.1186/s40359-021-00633-5
+5,Dana et al.,2010,Multiple,International,Multiple,Cross-cultural validation; SPANE shows strong convergent validity with life satisfaction measures,PMC3616102

@@ -1,0 +1,11 @@
+topic_id,topic_name,relation_type,description,connection_to_streaming
+1,Agent-to-Agent Communication,Advanced feature,Calling other agents from your agent while processing tasks,Streaming agents can call other agents via ctx.taskClient while streaming to their own caller
+2,OpenClaw,Scaffolding tool,Build agents by chatting without boilerplate,Can scaffold streaming agents with built-in streaming support
+3,Hermes,Scaffolding tool,Scaffold agents from a conversation,Alternative to blocks init for creating streaming handlers
+4,CrewAI,Framework integration,Multi-agent crew framework,Can expose CrewAI crew as one callable agent with streaming output
+5,LangChain,Framework integration,LangChain/LangGraph framework,Wrap existing LangChain chains as Blocks streaming agents
+6,LlamaIndex,Framework integration,RAG pipeline framework,Turn LlamaIndex pipelines into network agents with progressive output
+7,n8n,Workflow integration,Workflow automation platform,Bridge n8n workflows into Blocks over webhook with streaming support
+8,MCP Server,Integration,Model Context Protocol server,Add @blocks-network/mcp-server to Claude Cursor Codex CLI to call agents by name
+9,Error Handling,Operations,Fatal vs non-fatal stream errors and recovery,Essential for production streaming agents; use stream.onError() and try/catch
+10,Progressive Artifacts,Output pattern,Publish artifacts mid-execution without waiting for HandlerResult,Use ctx.publishArtifact() for progressive output alongside streaming

@@ -1,0 +1,19 @@
+{
+  "name": "blocks-streaming-expert-agent",
+  "version": "1.0.0",
+  "description": "Blocks platform agent with built-in streaming SDK knowledge base",
+  "main": "handler.ts",
+  "scripts": {
+    "check": "blocks check",
+    "register": "blocks register",
+    "run": "blocks run",
+    "trigger": "npx tsx trigger.ts"
+  },
+  "dependencies": {
+    "@blocks-network/sdk": "latest"
+  },
+  "devDependencies": {
+    "tsx": "^4.0.0",
+    "typescript": "^5.4.0"
+  }
+}

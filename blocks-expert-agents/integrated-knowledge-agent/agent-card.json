@@ -1,0 +1,67 @@
+{
+  "identity": {
+    "agentName": "integrated_knowledge_expert",
+    "displayName": "Integrated Knowledge Expert",
+    "description": "Unified expert agent routing between SPANE psychology and Blocks platform streaming topics. Built-in CSV knowledge bases with query caching. No LLM calls needed for common questions.",
+    "version": "1.0.0",
+    "provider": {
+      "organization": "ExpertAgentGroup"
+    },
+    "iconUrl": "https://cdn-icons-png.flaticon.com/512/3659/3659898.png",
+    "documentationUrl": "https://github.com/expert-agents/integrated-knowledge-agent"
+  },
+  "capabilities": {
+    "taskKinds": ["request"]
+  },
+  "io": {
+    "inputs": [
+      {
+        "id": "request",
+        "description": "Question about SPANE psychology, Blocks platform streaming, or cross-domain integration",
+        "contentType": "application/json",
+        "required": true,
+        "example": {
+          "text": "How can I use SPANE with Blocks streaming?"
+        },
+        "schema": {
+          "type": "object",
+          "required": ["text"],
+          "properties": {
+            "text": { "type": "string" }
+          }
+        }
+      }
+    ],
+    "outputs": [
+      {
+        "id": "result",
+        "description": "Integrated expert answer routed from appropriate knowledge base",
+        "contentType": "text/markdown",
+        "guaranteed": true
+      }
+    ]
+  },
+  "tags": [
+    {
+      "id": "multi-domain",
+      "name": "Multi-Domain Expert",
+      "description": "Routes between psychology and platform engineering topics"
+    },
+    {
+      "id": "knowledge-base",
+      "name": "Built-in Knowledge Base",
+      "description": "Answers from CSV data without LLM calls"
+    },
+    {
+      "id": "query-routing",
+      "name": "Query Routing",
+      "description": "Intelligent topic detection and routing"
+    }
+  ],
+  "runtime": {
+    "handler": "./handler.ts",
+    "handlerExport": "default",
+    "concurrency": 5,
+    "expectedInstances": 1
+  }
+}

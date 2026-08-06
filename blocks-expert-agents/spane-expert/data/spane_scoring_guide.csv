@@ -1,0 +1,4 @@
+score_type,items,range,interpretation,formula
+SPANE-P,"positive,good,pleasant,happy,joyful,contented",6-30,Higher scores indicate more frequent positive affect,Sum of 6 positive items (each 1-5)
+SPANE-N,"negative,bad,unpleasant,sad,afraid,angry",6-30,Higher scores indicate more frequent negative affect,Sum of 6 negative items (each 1-5)
+SPANE-B,SPANE-P minus SPANE-N,-24 to 24,Positive scores indicate positive emotional balance; negative scores indicate negative emotional balance,SPANE-P score minus SPANE-N score

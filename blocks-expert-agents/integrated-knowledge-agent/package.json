@@ -1,0 +1,19 @@
+{
+  "name": "integrated-knowledge-agent",
+  "version": "1.0.0",
+  "description": "Blocks platform integrated agent with SPANE psychology and streaming SDK knowledge bases",
+  "main": "handler.ts",
+  "scripts": {
+    "check": "blocks check",
+    "register": "blocks register",
+    "run": "blocks run",
+    "trigger": "npx tsx trigger.ts"
+  },
+  "dependencies": {
+    "@blocks-network/sdk": "latest"
+  },
+  "devDependencies": {
+    "tsx": "^4.0.0",
+    "typescript": "^5.4.0"
+  }
+}

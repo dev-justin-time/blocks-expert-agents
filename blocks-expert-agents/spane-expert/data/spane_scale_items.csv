@@ -1,0 +1,13 @@
+item_id,item_text,subscale,reverse_scored,description
+positive,Positive,SPANE-P,No,Feeling positive in general
+good,Good,SPANE-P,No,Feeling that things are good
+pleasant,Pleasant,SPANE-P,No,Experiencing pleasant feelings
+happy,Happy,SPANE-P,No,Feeling happy
+joyful,Joyful,SPANE-P,No,Feeling joyful
+contented,Contented,SPANE-P,No,Feeling satisfied and content
+negative,Negative,SPANE-N,No,Feeling negative in general
+bad,Bad,SPANE-N,No,Feeling that things are bad
+unpleasant,Unpleasant,SPANE-N,No,Experiencing unpleasant feelings
+sad,Sad,SPANE-N,No,Feeling sad
+afraid,Afraid,SPANE-N,No,Feeling scared or afraid
+angry,Angry,SPANE-N,No,Feeling angry

@@ -1,0 +1,6 @@
+method_id,method_name,task_kind,duration,use_case,direction,format,affinity,description
+1,Request Streaming,request,One-shot,LLM text generation code review progress updates,outbound,bytes,_default,Stream output during a one-shot task then return final artifact. Most common pattern.
+2,Pipe Streaming,pipe,1-30 days,"Stock tickers monitoring real-time feeds interactive sessions",outbound,events,dedicated,Long-lived sessions with continuous bidirectional data flow. Agent runs continuously.
+3,Bidirectional Pipe,pipe,1-30 days,Real-time translation interactive chat,bidirectional,events,dedicated,Both agent and caller read and write on the same stream for interactive sessions.
+4,Event Streaming,pipe,1-30 days,"IoT sensor data telemetry structured monitoring",outbound,events,dedicated,Stream structured objects optimized for monitoring data sensor readings.
+5,Byte Streaming,request,One-shot,"Progressive text binary data LLM tokens",outbound,bytes,_default,Raw chunked data optimized for LLM token streaming and progressive output.

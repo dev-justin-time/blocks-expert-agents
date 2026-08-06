@@ -1,0 +1,11 @@
+pattern_id,pattern_name,code_snippet,language,description
+1,Basic Request Stream,"const stream = await ctx.createStream(); stream.write('chunk'); await stream.end();",TypeScript,Open a stream write chunks and close it for one-shot tasks
+2,Event Stream Pipe,"const stream = await ctx.createStream({format:'events',declaredStream:'stream'}); stream.write({type:'quote',symbol:'AAPL',price:187.50});",TypeScript,Stream structured objects for continuous data feeds
+3,Caller Consume Stream,"const streamRef = await session.waitForStream(); const stream = streamRef.open(); for await (const inbound of stream.inbound) { process.stdout.write(inbound.data); }",TypeScript,Wait for agent to open stream and consume chunks as they arrive
+4,Caller Send Pipe,"const session = await client.sendMessage({agentName:'stock_sim',taskKind:'pipe',duration:5,requestParts:[{partId:'request',text:'AAPL,MSFT'}]});",TypeScript,Open a pipe task with duration and consume real-time events
+5,Abort Signal Check,"while (!ctx.cancelSignal.aborted) { stream.write(data); await sleep(1000, ctx.cancelSignal); }",TypeScript,Check cancelSignal in loop for pipe tasks to handle cancellation
+6,Agent Card Request,"{"capabilities":{"taskKinds":["request"]},"streams":{"_default":{"direction":"outbound","format":"bytes"}}}",JSON,Agent card configuration for request streaming with default stream
+7,Agent Card Pipe,"{"capabilities":{"taskKinds":["pipe"]},"streams":{"stream":{"direction":"outbound","format":"events","affinity":"dedicated"}}}",JSON,Agent card configuration for pipe streaming with named dedicated stream
+8,Error Handling,"stream.onError((err) => { console.error('Stream error:',err); cleanup(); });",TypeScript,Register callback for stream-level errors like network failure or PAM revocation
+9,Status Reporting,"ctx.reportStatus('Streaming output...');",TypeScript,Send progress updates to caller visible in real time
+10,Python Handler,"def handler(task, ctx=None): text=''; return {'artifacts':[{'data':result,'mimeType':'text/plain'}]}",Python,Basic Python handler signature returning artifacts

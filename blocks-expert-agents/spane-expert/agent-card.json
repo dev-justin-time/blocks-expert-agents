@@ -1,0 +1,67 @@
+{
+  "identity": {
+    "agentName": "spane_expert",
+    "displayName": "SPANE Psychology Expert",
+    "description": "Expert on the Scale of Positive and Negative Experience (SPANE) with built-in CSV knowledge base covering scale items, scoring, validation studies, and myth debunking. Answers without LLM calls using cached common queries.",
+    "version": "1.0.0",
+    "provider": {
+      "organization": "ExpertAgentGroup"
+    },
+    "iconUrl": "https://cdn-icons-png.flaticon.com/512/2913/2913520.png",
+    "documentationUrl": "https://github.com/expert-agents/spane-expert"
+  },
+  "capabilities": {
+    "taskKinds": ["request"]
+  },
+  "io": {
+    "inputs": [
+      {
+        "id": "request",
+        "description": "Question about SPANE scale psychology or well-being measurement",
+        "contentType": "application/json",
+        "required": true,
+        "example": {
+          "text": "How do you score the SPANE scale?"
+        },
+        "schema": {
+          "type": "object",
+          "required": ["text"],
+          "properties": {
+            "text": { "type": "string" }
+          }
+        }
+      }
+    ],
+    "outputs": [
+      {
+        "id": "result",
+        "description": "SPANE expert answer with citations from built-in knowledge base",
+        "contentType": "text/markdown",
+        "guaranteed": true
+      }
+    ]
+  },
+  "tags": [
+    {
+      "id": "positive-psychology",
+      "name": "Positive Psychology",
+      "description": "Well-being measurement and positive psychology research"
+    },
+    {
+      "id": "spane",
+      "name": "SPANE Scale",
+      "description": "Scale of Positive and Negative Experience assessment"
+    },
+    {
+      "id": "psychometrics",
+      "name": "Psychometrics",
+      "description": "Psychological scale validation and scoring"
+    }
+  ],
+  "runtime": {
+    "handler": "./handler.ts",
+    "handlerExport": "default",
+    "concurrency": 3,
+    "expectedInstances": 1
+  }
+}

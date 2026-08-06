@@ -1,0 +1,67 @@
+{
+  "identity": {
+    "agentName": "blocks_streaming_expert",
+    "displayName": "Blocks Streaming Expert",
+    "description": "Expert on Blocks platform streaming patterns with built-in CSV knowledge base covering request/pipe streaming, configuration options, code patterns, and SDK setup. Answers without LLM calls using cached common queries.",
+    "version": "1.0.0",
+    "provider": {
+      "organization": "ExpertAgentGroup"
+    },
+    "iconUrl": "https://cdn-icons-png.flaticon.com/512/2920/2920277.png",
+    "documentationUrl": "https://github.com/expert-agents/blocks-streaming-expert"
+  },
+  "capabilities": {
+    "taskKinds": ["request"]
+  },
+  "io": {
+    "inputs": [
+      {
+        "id": "request",
+        "description": "Question about Blocks platform streaming SDK or agent development",
+        "contentType": "application/json",
+        "required": true,
+        "example": {
+          "text": "What is the difference between request and pipe streaming?"
+        },
+        "schema": {
+          "type": "object",
+          "required": ["text"],
+          "properties": {
+            "text": { "type": "string" }
+          }
+        }
+      }
+    ],
+    "outputs": [
+      {
+        "id": "result",
+        "description": "Blocks streaming expert answer with code examples from built-in knowledge base",
+        "contentType": "text/markdown",
+        "guaranteed": true
+      }
+    ]
+  },
+  "tags": [
+    {
+      "id": "blocks-platform",
+      "name": "Blocks Platform",
+      "description": "Blocks.ai agent network platform"
+    },
+    {
+      "id": "streaming",
+      "name": "Streaming",
+      "description": "Real-time data streaming patterns and SDK"
+    },
+    {
+      "id": "agent-development",
+      "name": "Agent Development",
+      "description": "Building and deploying agents on Blocks"
+    }
+  ],
+  "runtime": {
+    "handler": "./handler.ts",
+    "handlerExport": "default",
+    "concurrency": 3,
+    "expectedInstances": 1
+  }
+}

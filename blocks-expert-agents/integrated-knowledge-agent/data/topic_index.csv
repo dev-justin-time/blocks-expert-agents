@@ -1,0 +1,4 @@
+topic_id,topic_name,agent_name,expertise_areas,data_files,coverage_score
+1,SPANE Psychology,spane-expert,"Scale items scoring validation studies psychometric properties cross-cultural research myth debunking","spane_scale_items.csv spane_scoring_guide.csv spane_validation_studies.csv spane_faq_cache.csv spane_related_topics.csv",0.95
+2,Blocks Streaming,blocks-streaming-expert,"Request streaming pipe streaming stream configuration code patterns error handling SDK installation agent cards pricing","streaming_methods.csv stream_config_options.csv code_patterns.csv streaming_faq_cache.csv streaming_related_topics.csv",0.95
+3,Cross-Domain Integration,integrated-knowledge-agent,"Combining SPANE assessment with Blocks streaming architecture real-time well-being monitoring research data pipelines","unified_faq_cache.csv topic_index.csv",0.85

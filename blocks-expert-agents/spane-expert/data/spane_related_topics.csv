@@ -1,0 +1,9 @@
+topic_id,topic_name,relation_type,description,connection_to_spane
+1,PANAS,Alternative measure,"Positive and Negative Affect Schedule - measures intensity rather than frequency",Both measure positive and negative affect but SPANE measures frequency with fewer items
+2,SWLS,Complementary measure,"Satisfaction With Life Scale - measures cognitive evaluation of life",SPANE correlates strongly with SWLS; together they assess emotional and cognitive well-being
+3,Flourishing Scale,Complementary measure,Measures psychological flourishing and functioning,SPANE captures emotional component; Flourishing Scale captures eudaimonic component
+4,PERMA,Framework,Positive psychology framework by Seligman,SPANE measures the 'P' (Positive Emotion) component of PERMA
+5,Subjective Well-Being,Parent construct,"Diener's tripartite model of life satisfaction, positive affect, and negative affect",SPANE measures the affective components of SWB
+6,Emotional Intelligence,Related field,Ability to perceive use understand and manage emotions,SPANE scores correlate with emotional awareness and regulation
+7,Cross-Cultural Psychology,Application field,Study of psychological phenomena across cultures,SPANE has been validated in 15+ languages showing strong cross-cultural validity
+8,Well-being Interventions,Application,Programs designed to improve psychological well-being,SPANE is commonly used as outcome measure in positive psychology interventions
