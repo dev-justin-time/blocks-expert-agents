@@ -1,0 +1,66 @@
+14:19:11.137
+npm error Found: react@18.3.1
+14:19:11.137
+npm error node_modules/react
+14:19:11.138
+npm error   react@"^18.2.0" from the root project
+14:19:11.138
+npm error   peer react@">=16.8.0" from @floating-ui/react-dom@2.1.8
+14:19:11.138
+npm error   node_modules/@floating-ui/react-dom
+14:19:11.138
+npm error     @floating-ui/react-dom@"^2.0.0" from @radix-ui/react-popper@1.2.8
+14:19:11.138
+npm error     node_modules/@radix-ui/react-popper
+14:19:11.138
+npm error       @radix-ui/react-popper@"1.2.8" from @radix-ui/react-hover-card@1.1.15
+14:19:11.138
+npm error       node_modules/@radix-ui/react-hover-card
+14:19:11.138
+npm error         @radix-ui/react-hover-card@"^1.1.15" from the root project
+14:19:11.139
+npm error       4 more (@radix-ui/react-menu, @radix-ui/react-popover, ...)
+14:19:11.141
+npm error   96 more (@radix-ui/react-accordion, @radix-ui/react-arrow, ...)
+14:19:11.142
+npm error
+14:19:11.142
+npm error Could not resolve dependency:
+14:19:11.142
+npm error peer react@"^19" from @react-three/drei@10.7.7
+14:19:11.142
+npm error node_modules/@react-three/drei
+14:19:11.142
+npm error   @react-three/drei@"^10.7.7" from the root project
+14:19:11.142
+npm error
+14:19:11.142
+npm error Conflicting peer dependency: react@19.2.6
+14:19:11.142
+npm error node_modules/react
+14:19:11.142
+npm error   peer react@"^19" from @react-three/drei@10.7.7
+14:19:11.142
+npm error   node_modules/@react-three/drei
+14:19:11.143
+npm error     @react-three/drei@"^10.7.7" from the root project
+14:19:11.143
+npm error
+14:19:11.143
+npm error Fix the upstream dependency conflict, or retry
+14:19:11.143
+npm error this command with --force or --legacy-peer-deps
+14:19:11.143
+npm error to accept an incorrect (and potentially broken) dependency resolution.
+14:19:11.143
+npm error
+14:19:11.143
+npm error
+14:19:11.146
+npm error For a full report see:
+14:19:11.147
+npm error /opt/buildhome/.npm/_logs/2026-05-28T21_19_06_071Z-eresolve-report.txt
+14:19:11.147
+npm error A complete log of this run can be found in: /opt/buildhome/.npm/_logs/2026-05-28T21_19_06_071Z-debug-0.log
+14:19:11.231
+Failed: error occurred while installing tools or dependencies
